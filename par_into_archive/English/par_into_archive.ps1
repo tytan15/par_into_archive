@@ -63,7 +63,7 @@ if (!(Test-Path $plikPliki)) {
     exit
 }
 #reading the contents of a text file
-$listaPlikow = Get-Content $plikPliki
+$listaPlikow = @(Get-Content $plikPliki)
 
 
 #determining the number of files transferred

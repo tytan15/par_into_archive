@@ -63,7 +63,7 @@ if (!(Test-Path $plikPliki)) {
     exit
 }
 #odczytywanie zawartości pliku tekstowego
-$listaPlikow = Get-Content $plikPliki
+$listaPlikow = @(Get-Content $plikPliki)
 
 
 #ustalenie liczby przekazanych plików
